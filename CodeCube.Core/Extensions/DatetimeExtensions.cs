@@ -7,7 +7,7 @@ namespace CodeCube.Core.Extensions
     ///<summary>
     /// Class with extension methods for datetime
     ///</summary>
-    public static class DatetimeExtensions
+    public static class DateTimeExtensions
     {
         ///<summary>
         ///</summary>
@@ -121,6 +121,20 @@ namespace CodeCube.Core.Extensions
         public static string AsReadableDateTime(this DateTime date)
         {
             return $"{date:d MMMM yyyy HH:mm}";
+        }
+
+        /// <summary>
+        /// method for converting a System.DateTime value to a UNIX Timestamp
+        /// </summary>
+        /// <param name="value">date to convert</param>
+        public static double ConvertToTimestamp(this DateTime value)
+        {
+            //create Timespan by subtracting the value provided from
+            //the Unix Epoch
+            TimeSpan span = (value - new DateTime(1970, 1, 1, 0, 0, 0, 0).ToLocalTime());
+
+            //return the total seconds (which is a UNIX timestamp)
+            return span.TotalSeconds;
         }
     }
 }
