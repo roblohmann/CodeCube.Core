@@ -11,7 +11,6 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
       Basic set of extensions and helpers for the .NET framework
-      A set of MVC utilities like menuitems, breadcrumbs, meta tags, Google analytics tags and more.
     </description>
     <copyright>2013 - 2018 Rob Lohmann</copyright>
     <tags>utilities attributes validation extensions filters expressionconverter</tags>
