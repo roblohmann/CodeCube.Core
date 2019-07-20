@@ -7,7 +7,7 @@
     <authors>Rob Lohmann</authors>
     <owners>Rob Lohmann</owners>
     <licenseUrl>http://opensource.org/licenses/ms-pl.html</licenseUrl>
-    <projectUrl>https://github.com/Rohem/CodeCube.Core</projectUrl>
+    <projectUrl>https://github.com/roblohmann/CodeCube.Core</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
       Basic set of extensions and helpers for the .NET framework
