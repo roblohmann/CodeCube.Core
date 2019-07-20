@@ -2,7 +2,6 @@
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
-using CodeCube.Core.Helpers;
 
 namespace CodeCube.Core.Extensions
 {
@@ -21,7 +20,7 @@ namespace CodeCube.Core.Extensions
         public static Bitmap ResizeImage(Image image, int width, int height)
         {
             var frameCount = image.GetFrameCount(new FrameDimension(image.FrameDimensionsList[0]));
-            var newDimensions = ImageFunctions.GenerateImageDimensions(image.Width, image.Height, width, height);
+            var newDimensions = new ImageFunctions().GetImageDimensions(image.Width, image.Height, width, height);
 
             var resizedImage = new Bitmap(newDimensions.Width, newDimensions.Height);
             if (frameCount > 1)
