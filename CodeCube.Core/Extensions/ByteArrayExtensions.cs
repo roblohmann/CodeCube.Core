@@ -34,7 +34,7 @@ namespace CodeCube.Core.Extensions
                     canvas.DrawImage(originalImage, 0, 0, newSize.Width, newSize.Height);
 
                     newBitmap.SetResolution(dpi, dpi);
-                    newBitmap.Save(newMemoryStream, ImageFunctions.GetEncoderInfo(mimeType), null);
+                    newBitmap.Save(newMemoryStream, new ImageFunctions().GetEncoderInfo(mimeType), null);
                 }
                 return newMemoryStream.ToArray();
             }
