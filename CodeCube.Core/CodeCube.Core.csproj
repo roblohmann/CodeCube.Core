@@ -11,7 +11,9 @@
     <Description>Basic set of extensions and helpers for the .NET framework</Description>
     <PackageReleaseNotes>As of version 2.x this is a .NET Standard package supporting .NET 4.7.1 and higer and .NET Core 2.x</PackageReleaseNotes>
     <Copyright>Copyright Rob Lohmann 2019</Copyright>
-    <PackageProjectUrl>https://github.com/roblohmann/CodeCube</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/roblohmann/CodeCube.Core</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/roblohmann/CodeCube.Core/blob/master/nuget-icon.png?raw=true</PackageIconUrl>
+    <RepositoryUrl>https://github.com/roblohmann/CodeCube.Core</RepositoryUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
