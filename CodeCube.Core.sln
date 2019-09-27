@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7A388252-E5A2-427B-957F-F68741C83460}"
 	ProjectSection(SolutionItems) = preProject
 		CodeCube.Core.nuspec = CodeCube.Core.nuspec
+		nuget-icon.png = nuget-icon.png
 	EndProjectSection
 EndProject
 Global
