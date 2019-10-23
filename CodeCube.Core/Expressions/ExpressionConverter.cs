@@ -10,7 +10,7 @@ namespace CodeCube.Core.Expressions
     ///     <cref>http://stackoverflow.com/questions/4601844/expression-tree-copy-or-convert</cref>
     /// </see>
     /// <typeparam name="TTo">The type to convert to.</typeparam>
-    public class ExpressionConverter<TTo>
+    public sealed class ExpressionConverter<TTo>
     {
         /// <summary>
         /// Convert an labmda expression to a lambda expression of a different type.
