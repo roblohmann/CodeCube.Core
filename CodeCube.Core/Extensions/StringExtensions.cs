@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CodeCube.Core.Helpers;
+using System;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -180,7 +181,7 @@ namespace CodeCube.Core.Extensions
         /// <param name="needle">The Value to find in the text</param>
         /// <param name="replacement">The value to replace it with</param>
         /// <returns>The string with the value replaced</returns>
-        public static string ReplaceFirst(string haystack, string needle, string replacement)
+        public static string ReplaceFirst(this string haystack, string needle, string replacement)
         {
             return new Regex(Regex.Escape(needle)).Replace(haystack, replacement, 1);
         }
@@ -250,10 +251,22 @@ namespace CodeCube.Core.Extensions
         /// Test if the string is a valid Guid
         /// </summary>
         /// <returns>True if an Guid, otherwise false</returns>
-        public static bool IsValidGuid(string str)
+        public static bool IsValidGuid(this string str)
         {
             Guid guid;
             return Guid.TryParse(str, out guid);
+        }
+
+        /// <summary>
+        /// Try to parse a string value to the provided enum.
+        /// </summary>
+        /// <typeparam name="TEnum">The type of enum which the string should be parsed into.</typeparam>
+        /// <param name="value">The string value to parse.</param>
+        /// <param name="defaultValue">The default enum value to return if the value can't be parsed.</param>
+        /// <returns>If parsing succeeds, then the parsed enum value will be returned. Otherwise the defaultvalue will be returned.</returns>
+        public static TEnum TryParseEnum<TEnum>(this string stringValue, TEnum defaultValue) where TEnum : struct
+        {
+            return EnumHelper.TryParseEnum(stringValue, defaultValue);
         }
     }
 }
