@@ -259,26 +259,14 @@ namespace CodeCube.Core.Extensions
 
         /// <summary>
         /// Try to parse a string value to the provided enum.
-        /// If parsing fails, null will be returned.
-        /// </summary>
-        /// <typeparam name="TEnum">The type of enum which the string should be parsed into.</typeparam>
-        /// <param name="value">The string value to parse.</param>
-        /// <returns>If parsing succeeds, then the parsed enum value will be returned. Otherwise the defaultvalue will be returned.</returns>
-        public static TEnum? TryParseEnum<TEnum>(this string stringValue) where TEnum : struct
-        {
-            return EnumHelper.TryParseEnum<TEnum>(stringValue, null);
-        }
-
-        /// <summary>
-        /// Try to parse a string value to the provided enum.
         /// </summary>
         /// <typeparam name="TEnum">The type of enum which the string should be parsed into.</typeparam>
         /// <param name="value">The string value to parse.</param>
         /// <param name="defaultValue">The default enum value to return if the value can't be parsed.</param>
         /// <returns>If parsing succeeds, then the parsed enum value will be returned. Otherwise the defaultvalue will be returned.</returns>
-        public static TEnum? TryParseEnum<TEnum>(this string stringValue, TEnum defaultValue) where TEnum : struct
+        public static TEnum TryParseEnum<TEnum>(this string stringValue, TEnum defaultValue) where TEnum : struct
         {
-            return EnumHelper.TryParseEnum<TEnum>(stringValue, defaultValue);
+            return EnumHelper.TryParseEnum(stringValue, defaultValue);
         }
     }
 }

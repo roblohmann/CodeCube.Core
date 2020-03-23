@@ -7,6 +7,11 @@ namespace CodeCube.Core.Helpers
     /// </summary>
     public static class EnumHelper
     {
+        public static TEnum TryParseEnum<TEnum>(int value, TEnum defaultValue) where TEnum : struct
+        {
+            return TryParseEnum(value.ToString(), defaultValue);
+        }
+
         /// <summary>
         /// Try to parse a string value to the provided enum.
         /// </summary>
@@ -14,7 +19,7 @@ namespace CodeCube.Core.Helpers
         /// <param name="value">The string value to parse.</param>
         /// <param name="defaultValue">The default enum value to return if the value can't be parsed. Can be NULL</param>
         /// <returns>If parsing succeeds, then the parsed enum value will be returned. Otherwise the defaultvalue will be returned.</returns>
-        public static TEnum? TryParseEnum<TEnum>(string value, TEnum? defaultValue) where TEnum : struct
+        public static TEnum TryParseEnum<TEnum>(string value, TEnum defaultValue) where TEnum : struct
         {
             if (string.IsNullOrWhiteSpace(value)) return defaultValue;
 
