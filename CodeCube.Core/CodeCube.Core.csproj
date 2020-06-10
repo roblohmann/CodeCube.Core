@@ -9,11 +9,12 @@
     <Product>CodeCube.Core</Product>
     <PackageId>CodeCube.Core</PackageId>
     <Description>Basic set of extensions and helpers for the .NET framework</Description>
-    <PackageReleaseNotes>As of version 2.x this is a .NET Standard package supporting .NET 4.7.1 and higer and .NET Core 2.x</PackageReleaseNotes>
-    <Copyright>Copyright Rob Lohmann 2019</Copyright>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <Copyright>Copyright Rob Lohmann 2019 - 2020</Copyright>
     <PackageProjectUrl>https://github.com/roblohmann/CodeCube.Core</PackageProjectUrl>
-    <PackageIconUrl>https://github.com/roblohmann/CodeCube.Core/blob/master/nuget-icon.png?raw=true</PackageIconUrl>
     <RepositoryUrl>https://github.com/roblohmann/CodeCube.Core</RepositoryUrl>
+    <PackageIcon>nuget-icon.png</PackageIcon>
+    <PackageTags>codecube codecube.core extensions</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -29,6 +30,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\nuget-icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
     <None Include="Resources\Translations.nl-NL.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Translations.Designer.cs</LastGenOutput>

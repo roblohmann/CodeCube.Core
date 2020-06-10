@@ -5,12 +5,12 @@ VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCube.Core", "CodeCube.Core\CodeCube.Core.csproj", "{C1CE36A2-8CEC-46E8-8253-9EAA21AF2062}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{93F62385-63C2-49CA-9051-90BE04A00C03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCube.Core.Tests", "CodeCube.Core.Tests\CodeCube.Core.Tests.csproj", "{D2FEC79C-0562-4B84-8045-F935B8CE7083}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9F18A23C-6CDD-4C6F-9EB2-3417374BC913}"
 	ProjectSection(SolutionItems) = preProject
 		nuget-icon.png = nuget-icon.png
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCube.Core.Tests", "CodeCube.Core.Tests\CodeCube.Core.Tests.csproj", "{D2FEC79C-0562-4B84-8045-F935B8CE7083}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
