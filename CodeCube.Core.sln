@@ -5,6 +5,13 @@ VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCube.Core", "CodeCube.Core\CodeCube.Core.csproj", "{C1CE36A2-8CEC-46E8-8253-9EAA21AF2062}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCube.Core.Tests", "CodeCube.Core.Tests\CodeCube.Core.Tests.csproj", "{D2FEC79C-0562-4B84-8045-F935B8CE7083}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9F18A23C-6CDD-4C6F-9EB2-3417374BC913}"
+	ProjectSection(SolutionItems) = preProject
+		nuget-icon.png = nuget-icon.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{C1CE36A2-8CEC-46E8-8253-9EAA21AF2062}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1CE36A2-8CEC-46E8-8253-9EAA21AF2062}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1CE36A2-8CEC-46E8-8253-9EAA21AF2062}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2FEC79C-0562-4B84-8045-F935B8CE7083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2FEC79C-0562-4B84-8045-F935B8CE7083}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2FEC79C-0562-4B84-8045-F935B8CE7083}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2FEC79C-0562-4B84-8045-F935B8CE7083}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
