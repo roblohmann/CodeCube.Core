@@ -9,26 +9,6 @@ namespace CodeCube.Core.Extensions
     public static class StringExtensions
     {
         /// <summary>
-        /// returns an string hashed as md5
-        /// </summary>
-        /// <param name="stringValue"></param>
-        /// <returns>MD5 hashed string</returns>
-        public static string AsMd5(this string stringValue)
-        {
-            MD5 md5 = new MD5CryptoServiceProvider();
-            var originalBytes = Encoding.Default.GetBytes(stringValue);
-            var encodedBytes = md5.ComputeHash(originalBytes);
-
-            //Convert encoded bytes back to a 'readable' string
-            var result = new StringBuilder(encodedBytes.Length * 2);
-
-            foreach (var t in encodedBytes)
-                result.Append(t.ToString("x2"));
-
-            return result.ToString();
-        }
-
-        /// <summary>
         /// Creates an SHA-512 hashed string from an clear password string
         /// </summary>
         /// <param name="password"></param>
