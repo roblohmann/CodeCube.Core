@@ -9,16 +9,16 @@ namespace CodeCube.Core.Extensions
     public static class StringExtensions
     {
         /// <summary>
-        /// Creates an SHA-512 hashed string from an clear password string
+        /// Creates an SHA-512 hashed string from an clear inputValue string
         /// </summary>
-        /// <param name="password"></param>
+        /// <param name="inputValue"></param>
         /// <returns></returns>
-        public static string AsSha512(this string password)
+        public static string AsSha512(this string inputValue)
         {
             var sb = new StringBuilder();
 
             var sha512 = SHA512.Create();
-            var inputBytes = Encoding.ASCII.GetBytes(password);
+            var inputBytes = Encoding.ASCII.GetBytes(inputValue);
             var hashBytes = sha512.ComputeHash(inputBytes);
 
             foreach (var t in hashBytes)
@@ -241,23 +241,46 @@ namespace CodeCube.Core.Extensions
         /// Try to parse a string value to the provided enum.
         /// </summary>
         /// <typeparam name="TEnum">The type of enum which the string should be parsed into.</typeparam>
-        /// <param name="value">The string value to parse.</param>
+        /// <param name="stringValue">The string value to parse.</param>
         /// <returns>If parsing succeeds, then the parsed enum value will be returned. Otherwise the defaultvalue will be returned.</returns>
-        public static TEnum? TryParseEnum<TEnum>(this string stringValue) where TEnum : struct
+        public static TEnum TryParseEnum<TEnum>(this string stringValue) where TEnum : struct
         {
-            return EnumHelper.TryParseEnum<TEnum>(stringValue, null);
+            return EnumHelper.TryParseEnum<TEnum>(stringValue, default(TEnum));
         }
 
         /// <summary>
         /// Try to parse a string value to the provided enum.
         /// </summary>
         /// <typeparam name="TEnum">The type of enum which the string should be parsed into.</typeparam>
-        /// <param name="value">The string value to parse.</param>
+        /// <param name="stringValue">The string value to parse.</param>
         /// <param name="defaultValue">The default enum value to return if the value can't be parsed.</param>
         /// <returns>If parsing succeeds, then the parsed enum value will be returned. Otherwise the defaultvalue will be returned.</returns>
-        public static TEnum? TryParseEnum<TEnum>(this string stringValue, TEnum defaultValue) where TEnum : struct
+        public static TEnum TryParseEnum<TEnum>(this string stringValue, TEnum defaultValue) where TEnum : struct
         {
             return EnumHelper.TryParseEnum<TEnum>(stringValue, defaultValue);
+        }
+
+        /// <summary>
+        /// Try to parse a string value to the provided enum.
+        /// </summary>
+        /// <typeparam name="TEnum">The type of enum which the string should be parsed into.</typeparam>
+        /// <param name="stringValue">The string value to parse.</param>
+        /// <returns>If parsing succeeds, then the parsed enum value will be returned. Otherwise the defaultvalue will be returned.</returns>
+        public static TEnum? TryParseEnumOptional<TEnum>(this string stringValue) where TEnum : struct
+        {
+            return EnumHelper.TryParseEnumOptional<TEnum>(stringValue, null);
+        }
+
+        /// <summary>
+        /// Try to parse a string value to the provided enum.
+        /// </summary>
+        /// <typeparam name="TEnum">The type of enum which the string should be parsed into.</typeparam>
+        /// <param name="stringValue">The string value to parse.</param>
+        /// <param name="defaultValue">The default enum value to return if the value can't be parsed.</param>
+        /// <returns>If parsing succeeds, then the parsed enum value will be returned. Otherwise the defaultvalue will be returned.</returns>
+        public static TEnum? TryParseEnumOptional<TEnum>(this string stringValue, TEnum defaultValue) where TEnum : struct
+        {
+            return EnumHelper.TryParseEnumOptional<TEnum>(stringValue, defaultValue);
         }
     }
 }
