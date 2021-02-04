@@ -31,7 +31,7 @@ namespace CodeCube.Core.Tests
         public void ToEnumShouldBeNullForInvalidString()
         {
             const string test = "orange";
-            TestEnum? result = test.TryParseEnum<TestEnum>();
+            TestEnum? result = test.TryParseEnumOptional<TestEnum>();
             Assert.False(result.HasValue);
         }
     }
