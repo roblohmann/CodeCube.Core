@@ -1,6 +1,4 @@
-﻿using CodeCube.Core.Helpers;
-
-namespace CodeCube.Core.Extensions
+﻿namespace CodeCube.Core.Extensions
 {
     public static class IntegerExtensions
     {

@@ -233,8 +233,7 @@ namespace CodeCube.Core.Extensions
         /// <returns>True if an Guid, otherwise false</returns>
         public static bool IsValidGuid(this string str)
         {
-            Guid guid;
-            return Guid.TryParse(str, out guid);
+            return Guid.TryParse(str, out _);
         }
 
         /// <summary>

@@ -1,9 +1,7 @@
 ﻿using System.Drawing;
-using System.Drawing.Drawing2D;
 using System.IO;
-using CodeCube.Core.Helpers;
 
-namespace CodeCube.Core.Extensions
+namespace CodeCube.Core.Extensions.Drawing
 {
     /// <summary>
     /// Class with extension methods for bytearrays.

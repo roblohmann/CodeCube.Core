@@ -1,7 +1,6 @@
 using Xunit;
-using CodeCube.Core.Extensions;
 
-namespace CodeCube.Core.Tests
+namespace CodeCube.Core.Extensions.Tests
 {
     public class EnumExtensionsTests
     {
