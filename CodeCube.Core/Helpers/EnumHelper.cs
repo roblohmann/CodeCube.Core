@@ -5,14 +5,14 @@ namespace CodeCube.Core.Helpers
     /// <summary>
     /// Helper class with enum methods.
     /// </summary>
-    internal static class EnumHelper
+    public static class EnumHelper
     {
-        internal static TEnum? TryParseEnumOptional<TEnum>(int value, TEnum? defaultValue) where TEnum : struct
+        public static TEnum? TryParseEnumOptional<TEnum>(int value, TEnum? defaultValue) where TEnum : struct
         {
             return TryParseEnumOptional(value.ToString(), defaultValue);
         }
 
-        internal static TEnum TryParseEnum<TEnum>(int value, TEnum defaultValue) where TEnum : struct
+        public static TEnum TryParseEnum<TEnum>(int value, TEnum defaultValue) where TEnum : struct
         {
             return TryParseEnum(value.ToString(), defaultValue);
         }
