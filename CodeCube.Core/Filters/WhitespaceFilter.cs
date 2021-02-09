@@ -6,7 +6,7 @@ namespace CodeCube.Core.Filters
 {
     /// <summary>
     /// Whitespace filter to filter whitespaces from the HTMl on the provided stream.
-    /// <see cref="https://madskristensen.net/blog/a-whitespace-removal-http-module-for-aspnet-20"/>
+    /// <remarks>See https://madskristensen.net/blog/a-whitespace-removal-http-module-for-aspnet-20 for more information</remarks>
     /// </summary>
     public class WhitespaceFilter : Stream
     {
