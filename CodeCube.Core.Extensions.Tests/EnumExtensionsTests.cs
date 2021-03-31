@@ -2,14 +2,14 @@ using Xunit;
 
 namespace CodeCube.Core.Extensions.Tests
 {
+    public enum TestEnum
+    {
+        Red = 0,
+        Blue = 1,
+    }
+
     public class EnumExtensionsTests
     {
-        private enum TestEnum
-        {
-            Red = 0,
-            Blue = 1,
-        }
-
         [Fact]
         public void ToEnumShouldParseEqualString()
         {
@@ -32,6 +32,12 @@ namespace CodeCube.Core.Extensions.Tests
             const string test = "orange";
             TestEnum? result = test.TryParseEnumOptional<TestEnum>();
             Assert.False(result.HasValue);
+        }
+
+        [Fact]
+        public void AsIEnumerable_Should_Return_IeNumerable()
+        {
+            var listOfEnum = TestEnum.
         }
     }
 }

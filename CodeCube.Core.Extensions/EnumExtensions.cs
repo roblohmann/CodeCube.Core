@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace CodeCube.Core.Extensions
 {
@@ -16,6 +17,16 @@ namespace CodeCube.Core.Extensions
             foreach (Enum value in Enum.GetValues(flags.GetType()))
                 if (flags.HasFlag(value) && !Equals((int)(object)value, 0))
                     yield return (T)value;
+        }
+
+        public static List<TEnum> ToList<TEnum>(this TEnum values) where TEnum : Enum
+        {
+            return Enum.GetValues(typeof(TEnum)).Cast<TEnum>().ToList();
+        }
+
+        public static IEnumerable<TEnum> AsIEnumerable<TEnum>(this TEnum values) where TEnum : Enum
+        {
+            return Enum.GetValues(typeof(TEnum)).Cast<TEnum>();
         }
     }
 }

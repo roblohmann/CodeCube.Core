@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using CodeCube.Core.Helpers;
+﻿using CodeCube.Core.Helpers;
 using Xunit;
 
 namespace CodeCube.Core.Tests
