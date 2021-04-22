@@ -33,11 +33,5 @@ namespace CodeCube.Core.Extensions.Tests
             TestEnum? result = test.TryParseEnumOptional<TestEnum>();
             Assert.False(result.HasValue);
         }
-
-        [Fact]
-        public void AsIEnumerable_Should_Return_IeNumerable()
-        {
-            var listOfEnum = TestEnum.
-        }
     }
 }
