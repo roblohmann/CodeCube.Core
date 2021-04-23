@@ -16,13 +16,6 @@
     <PackageIcon>nuget-icon.png</PackageIcon>
     <PackageTags>codecube codecube.core extensions</PackageTags>
   </PropertyGroup>
-  
-  <ItemGroup>
-    <None Include="..\nuget-icon.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />

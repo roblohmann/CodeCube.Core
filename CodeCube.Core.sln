@@ -7,6 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCube.Core", "CodeCube.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCube.Core.Tests", "CodeCube.Core.Tests\CodeCube.Core.Tests.csproj", "{D2FEC79C-0562-4B84-8045-F935B8CE7083}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{26FBC98A-630B-46E3-9E53-9923563F0412}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		nuget-icon.png = nuget-icon.png
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
