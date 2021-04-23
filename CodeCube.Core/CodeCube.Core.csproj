@@ -13,12 +13,10 @@
     <Copyright>Copyright Rob Lohmann 2019 - 2020</Copyright>
     <PackageProjectUrl>https://github.com/roblohmann/CodeCube.Core</PackageProjectUrl>
     <RepositoryUrl>https://github.com/roblohmann/CodeCube.Core</RepositoryUrl>
-    <PackageIcon>nuget-icon.png</PackageIcon>
     <PackageTags>codecube codecube.core extensions</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
   </ItemGroup>
-
 </Project>
