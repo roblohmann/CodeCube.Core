@@ -1,4 +1,6 @@
-﻿namespace CodeCube.Core.Extensions
+﻿using CodeCube.Core.Extensions.Helpers;
+
+namespace CodeCube.Core.Extensions
 {
     public static class IntegerExtensions
     {

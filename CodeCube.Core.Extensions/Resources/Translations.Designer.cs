@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CodeCube.Core.Resources {
+namespace CodeCube.Core.Extensions.Resources {
     using System;
     
     

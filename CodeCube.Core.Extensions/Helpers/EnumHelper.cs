@@ -1,18 +1,18 @@
 ﻿using System;
 
-namespace CodeCube.Core.Helpers
+namespace CodeCube.Core.Extensions.Helpers
 {
     /// <summary>
     /// Helper class with enum methods.
     /// </summary>
-    public static class EnumHelper
+    internal static class EnumHelper
     {
-        public static TEnum? TryParseEnumOptional<TEnum>(int value, TEnum? defaultValue) where TEnum : struct
+        internal static TEnum? TryParseEnumOptional<TEnum>(int value, TEnum? defaultValue) where TEnum : struct
         {
             return TryParseEnumOptional(value.ToString(), defaultValue);
         }
 
-        public static TEnum TryParseEnum<TEnum>(int value, TEnum defaultValue) where TEnum : struct
+        internal static TEnum TryParseEnum<TEnum>(int value, TEnum defaultValue) where TEnum : struct
         {
             return TryParseEnum(value.ToString(), defaultValue);
         }

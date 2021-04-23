@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Globalization;
-using CodeCube.Core.Resources;
+using CodeCube.Core.Extensions.Resources;
 
 namespace CodeCube.Core.Extensions
 {

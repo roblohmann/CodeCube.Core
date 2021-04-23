@@ -17,5 +17,15 @@ namespace CodeCube.Core.Extensions
                 if (flags.HasFlag(value) && !Equals((int)(object)value, 0))
                     yield return (T)value;
         }
+
+        //public static List<TEnum> ToList<TEnum>(this TEnum values) where TEnum : Enum
+        //{
+        //    return Enum.GetValues(typeof(TEnum)).Cast<TEnum>().ToList();
+        //}
+
+        //public static IEnumerable<TEnum> AsIEnumerable<TEnum>(this TEnum values) where TEnum : Enum
+        //{
+        //    return Enum.GetValues(typeof(TEnum)).Cast<TEnum>();
+        //}
     }
 }

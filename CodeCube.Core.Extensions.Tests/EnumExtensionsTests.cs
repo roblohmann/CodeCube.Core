@@ -2,14 +2,14 @@ using Xunit;
 
 namespace CodeCube.Core.Extensions.Tests
 {
+    public enum TestEnum
+    {
+        Red = 0,
+        Blue = 1,
+    }
+
     public class EnumExtensionsTests
     {
-        private enum TestEnum
-        {
-            Red = 0,
-            Blue = 1,
-        }
-
         [Fact]
         public void ToEnumShouldParseEqualString()
         {
