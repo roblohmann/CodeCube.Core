@@ -49,7 +49,7 @@ namespace CodeCube.Core.Helpers
 
             try
             {
-                return Regex.IsMatch(email, RegularExpressions.EmailAddress, RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250));
+                return RegularExpressions.EmailAddress.IsMatch(email);
             }
             catch (RegexMatchTimeoutException)
             {
