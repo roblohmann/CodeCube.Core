@@ -7,17 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCube.Core", "CodeCube.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCube.Core.Tests", "CodeCube.Core.Tests\CodeCube.Core.Tests.csproj", "{D2FEC79C-0562-4B84-8045-F935B8CE7083}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9F18A23C-6CDD-4C6F-9EB2-3417374BC913}"
-	ProjectSection(SolutionItems) = preProject
-		nuget-icon.png = nuget-icon.png
-	EndProjectSection
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCube.Core.Extensions", "CodeCube.Core.Extensions\CodeCube.Core.Extensions.csproj", "{552B6C3C-9E94-42D9-8A66-56441024B602}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeCube.Core.Extensions.Drawing", "CodeCube.Core.Extensions.Drawing\CodeCube.Core.Extensions.Drawing.csproj", "{14DDC38E-0171-4BD6-9DE2-94119F442123}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCube.Core.Extensions.Tests", "CodeCube.Core.Extensions.Tests\CodeCube.Core.Extensions.Tests.csproj", "{A16C55C4-7942-4F75-8EE2-1ECE6C0EDB01}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,18 +21,6 @@ Global
 		{D2FEC79C-0562-4B84-8045-F935B8CE7083}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2FEC79C-0562-4B84-8045-F935B8CE7083}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2FEC79C-0562-4B84-8045-F935B8CE7083}.Release|Any CPU.Build.0 = Release|Any CPU
-		{552B6C3C-9E94-42D9-8A66-56441024B602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{552B6C3C-9E94-42D9-8A66-56441024B602}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{552B6C3C-9E94-42D9-8A66-56441024B602}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{552B6C3C-9E94-42D9-8A66-56441024B602}.Release|Any CPU.Build.0 = Release|Any CPU
-		{14DDC38E-0171-4BD6-9DE2-94119F442123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{14DDC38E-0171-4BD6-9DE2-94119F442123}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{14DDC38E-0171-4BD6-9DE2-94119F442123}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{14DDC38E-0171-4BD6-9DE2-94119F442123}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A16C55C4-7942-4F75-8EE2-1ECE6C0EDB01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A16C55C4-7942-4F75-8EE2-1ECE6C0EDB01}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A16C55C4-7942-4F75-8EE2-1ECE6C0EDB01}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A16C55C4-7942-4F75-8EE2-1ECE6C0EDB01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

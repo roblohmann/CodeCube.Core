@@ -8,7 +8,7 @@
     <Authors>Rob Lohmann</Authors>
     <Product>CodeCube.Core</Product>
     <PackageId>CodeCube.Core</PackageId>
-    <Description>Basic set of extensions and helpers for the .NET framework</Description>
+    <Description>Basic set of extensions and helpers for the .NET Core Framework</Description>
     <PackageReleaseNotes></PackageReleaseNotes>
     <Copyright>Copyright Rob Lohmann 2019 - 2020</Copyright>
     <PackageProjectUrl>https://github.com/roblohmann/CodeCube.Core</PackageProjectUrl>
@@ -16,15 +16,7 @@
     <PackageIcon>nuget-icon.png</PackageIcon>
     <PackageTags>codecube codecube.core extensions</PackageTags>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile></DocumentationFile>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netstandard2.0\CodeCube.Core.xml</DocumentationFile>
-  </PropertyGroup>
-
+  
   <ItemGroup>
     <None Include="..\nuget-icon.png">
       <Pack>True</Pack>
@@ -34,7 +26,6 @@
 
   <ItemGroup>
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
-    <PackageReference Include="System.Drawing.Common" Version="5.0.0" />
   </ItemGroup>
 
 </Project>
