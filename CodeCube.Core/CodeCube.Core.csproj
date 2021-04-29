@@ -9,11 +9,11 @@
     <Product>CodeCube.Core</Product>
     <PackageId>CodeCube.Core</PackageId>
     <Description>Basic set of extensions and helpers for the .NET Core Framework</Description>
-    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageReleaseNotes>NOTE: As of version 3.1.x this package is splitted into CodeCode.Core, CodeCube.Core.Extensions and CodeCube.Core.Extensions.Drawing</PackageReleaseNotes>
     <Copyright>Copyright Rob Lohmann 2019 - 2020</Copyright>
     <PackageProjectUrl>https://github.com/roblohmann/CodeCube.Core</PackageProjectUrl>
     <RepositoryUrl>https://github.com/roblohmann/CodeCube.Core</RepositoryUrl>
-    <PackageTags>codecube codecube.core extensions</PackageTags>
+    <PackageTags>codecube codecube.core output filter whitespace filter validation attributes</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
