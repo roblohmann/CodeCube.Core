@@ -10,7 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{26FBC98A-630B-46E3-9E53-9923563F0412}"
 	ProjectSection(SolutionItems) = preProject
 		LICENSE = LICENSE
-		nuget-icon.png = nuget-icon.png
+		CodeCube.Core\nuget-icon.png = CodeCube.Core\nuget-icon.png
 		README.md = README.md
 	EndProjectSection
 EndProject
