@@ -13,6 +13,7 @@
     <Copyright>Copyright Rob Lohmann 2019 - 2020</Copyright>
     <PackageProjectUrl>https://github.com/roblohmann/CodeCube.Core</PackageProjectUrl>
     <RepositoryUrl>https://github.com/roblohmann/CodeCube.Core</RepositoryUrl>
+    <PackageIcon>nuget-icon.png</PackageIcon>
     <PackageTags>codecube codecube.core output filter whitespace filter validation attributes</PackageTags>
   </PropertyGroup>
 
