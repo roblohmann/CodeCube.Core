@@ -1,16 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.1</TargetFrameworks>
-    <Version>2.0.0-alpha</Version> <!--The package version-->
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <FileVersion>2.0.0.0</FileVersion>
+    <TargetFrameworks>net6.0;net7.0;net8.0;net9.0</TargetFrameworks>
+    <Version>4.0.0</Version> <!--The package version-->
+    <AssemblyVersion>4.0.0</AssemblyVersion>
+    <FileVersion>4.0.0</FileVersion>
     <Authors>Rob Lohmann</Authors>
     <Product>CodeCube.Core</Product>
     <PackageId>CodeCube.Core</PackageId>
     <Description>Basic set of extensions and helpers for the .NET Core Framework</Description>
     <PackageReleaseNotes>NOTE: As of version 3.1.x this package is splitted into CodeCode.Core, CodeCube.Core.Extensions and CodeCube.Core.Extensions.Drawing</PackageReleaseNotes>
-    <Copyright>Copyright Rob Lohmann 2019 - 2020</Copyright>
+    <Copyright>Copyright Rob Lohmann 2019 - 2025</Copyright>
     <PackageProjectUrl>https://github.com/roblohmann/CodeCube.Core</PackageProjectUrl>
     <RepositoryUrl>https://github.com/roblohmann/CodeCube.Core</RepositoryUrl>
     <PackageIcon>nuget-icon.png</PackageIcon>
