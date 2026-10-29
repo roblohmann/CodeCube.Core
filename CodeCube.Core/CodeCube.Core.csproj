@@ -11,7 +11,7 @@
     <PackageId>CodeCube.Core</PackageId>
     <Description>Basic set of extensions and helpers for the .NET Core Framework</Description>
     <PackageReleaseNotes>NOTE: As of version 3.1.x this package is splitted into CodeCode.Core, CodeCube.Core.Extensions and CodeCube.Core.Extensions.Drawing</PackageReleaseNotes>
-    <Copyright>Copyright Rob Lohmann 2019 - 2025</Copyright>
+    <Copyright>Copyright Rob Lohmann 2019 - 2026</Copyright>
     <PackageProjectUrl>https://github.com/roblohmann/CodeCube.Core</PackageProjectUrl>
     <RepositoryUrl>https://github.com/roblohmann/CodeCube.Core</RepositoryUrl>
     <PackageIcon>nuget-icon.png</PackageIcon>
