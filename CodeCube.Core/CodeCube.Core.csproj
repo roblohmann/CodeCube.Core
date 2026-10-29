@@ -3,9 +3,6 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.1;net6.0;net7.0;net8.0;net9.0;net10.0</TargetFrameworks>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>4.0.0</Version> <!--The package version-->
-    <AssemblyVersion>4.0.0</AssemblyVersion>
-    <FileVersion>4.0.0</FileVersion>
     <Authors>Rob Lohmann</Authors>
     <Product>CodeCube.Core</Product>
     <PackageId>CodeCube.Core</PackageId>
